@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Its a suprise</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Valentine's Day Invitation</h1>
+        <p>Dear Maria,</p>
+        <p>Will you be my Valentine?</p>
+        <img src="heart.png" alt="Heart" id="heart">
+        <p class="instructions">Click on the heart to respond!</p>
+        <form action="/submit" method="post" onsubmit="return validateForm()">
+<label for="yes">
+    <input type="radio" id="yes" name="response" value="yes">
+    <img src="heart.png" alt="Heart" class="response-heart">
+</label>
+
+<label for="no">
+    <input type="radio" id="no" name="response" value="no">
+    <img src="broken_heart.png" alt="Broken Heart" class="response-heart">
+</label>
+
+            <br>
+
+            <input type="submit" value="Submit">
+        <form action="#" method="post" onsubmit="return validateForm()">
+    <!-- ... -->
+</form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
